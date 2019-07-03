@@ -1,10 +1,8 @@
 .DS_Store
 .dart_tool/
 
-.packages
 .pub/
 
-.idea/
 .vagrant/
 .sconsign.dblite
 .svn/
@@ -36,8 +34,6 @@ Icon?
 .tags*
 
 build/
-.android/
-.ios/
 .flutter-plugins
 
 # Xcode

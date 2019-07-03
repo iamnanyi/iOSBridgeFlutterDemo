@@ -14,9 +14,6 @@
 		BD2101A722CCA952000864BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2101A622CCA952000864BB /* Assets.xcassets */; };
 		BD2101AA22CCA952000864BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2101A822CCA952000864BB /* LaunchScreen.storyboard */; };
 		BD2101AD22CCA952000864BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2101AC22CCA952000864BB /* main.m */; };
-		BD2101B522CCA9EA000864BB /* Flutter.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BD2101B422CCA9E3000864BB /* Flutter.xcconfig */; };
-		BD2101B722CCA9F9000864BB /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BD2101B622CCA9F9000864BB /* Debug.xcconfig */; };
-		BD2101B922CCAA03000864BB /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BD2101B822CCAA03000864BB /* Release.xcconfig */; };
 		BD2101C222CCAC28000864BB /* Flutter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BD2101BF22CCAC28000864BB /* Flutter.podspec */; };
 		BD2101C322CCAC5A000864BB /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2101BC22CCAC28000864BB /* App.framework */; };
 		BD2101C422CCAC5A000864BB /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD2101BC22CCAC28000864BB /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -163,8 +160,8 @@
 				BD21019622CCA950000864BB /* Sources */,
 				BD21019722CCA950000864BB /* Frameworks */,
 				BD21019822CCA950000864BB /* Resources */,
-				BD2101BA22CCAAA9000864BB /* ShellScript */,
 				BD2101C522CCAC5A000864BB /* Embed Frameworks */,
+				0BCA5A3422CCDEC30021AD9C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,10 +211,7 @@
 			files = (
 				BD2101AA22CCA952000864BB /* LaunchScreen.storyboard in Resources */,
 				BD2101C222CCAC28000864BB /* Flutter.podspec in Resources */,
-				BD2101B522CCA9EA000864BB /* Flutter.xcconfig in Resources */,
-				BD2101B922CCAA03000864BB /* Release.xcconfig in Resources */,
 				BD2101A722CCA952000864BB /* Assets.xcassets in Resources */,
-				BD2101B722CCA9F9000864BB /* Debug.xcconfig in Resources */,
 				BD2101A522CCA950000864BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +219,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0BCA5A3422CCDEC30021AD9C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
 		66A2D1468CA84D9CD2E74511 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,23 +253,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		BD2101BA22CCAAA9000864BB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
